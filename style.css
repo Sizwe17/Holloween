@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.skull {
+    position: fixed;
+    z-index: -5;
+    height: 100vh;
+}
+
+.skull .skull4 {
+    position: fixed;
+    z-index: -4;
+    right: 0;
+    top: 0;
+    animation: flash 3s ease infinite;
+}
+
+.skull .skull2 {
+    position: fixed;
+    z-index: -4;
+    left: 550px;
+    top: 300px;
+    animation: flash 3s ease infinite;
+}
+
+
+.skull .skull1 {
+    position: fixed;
+    z-index: -4;
+    left: 0;
+    top: 50px;
+    animation: flash 3s ease infinite;
+}
+
+@keyframes flash {
+    0%{
+       opacity: 1;
+    }
+    50%{
+    opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+header {
+    background: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 70;
+}
+
+nav{
+    text-align: right;
+    margin-right: 125px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    margin-right: 50px;
+
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid white;
+}
+
+a:hover{
+    color: red;
+}
+
+.banner{
+    margin-top: 50px;
+    position: absolute;
+    margin-left: 150px;
+    width: 80%;
+    background: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 2px 2px  lime;
+}
+ 
+.banner .span1{
+    position: absolute;
+    right: 0;
+}
+.banner .span2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    }
+span{
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    width: 80px;
+}
+
+.span1 span:nth-child(1){
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.span1 span:nth-child(2),
+.span1 span:nth-child(3){
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.span2 span:nth-child(1){
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.span2 span:nth-child(2),
+.span2 span:nth-child(3){
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.intro {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+section {
+    height: 100vh;
+}
+
+.home{
+    align-items: center;
+}
+
+.head{
+    color: rgb(144, 158, 144);
+    position: absolute;
+    font-size: 90px;
+    text-transform: uppercase;  
+    margin-top: 400px;
+    margin-left: 350px;  
+}
+
+.start{
+    color: rgb(144, 158, 144);;
+    position: absolute;
+    font-size: 30px;
+    text-transform: uppercase;  
+    margin-top: 500px;
+    margin-left: 740px;  
+    text-decoration: none;    
+}
+
+.start:hover{
+    background: lime;
+    color: black;
+}
+
+.about {
+    background-image: url("about.jpg");
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px auto 110px;
+    position: absolute;
+    text-align: center;
+    grid-gap: 10px;
+    padding: 10px;
+    width: 80%;
+    margin-top: 250px;
+    margin-left: 150px;
+    font-family: sans-serif;  
+}
+
+.profile {
+    font-size: 18px;
+    background: grey;
+   
+}
+
+.story {
+        color: white;
+        text-align: left;
+}
+
+.ads {
+    font-size: 18px;
+}
+
+.story .story-intro {
+    margin-top: 30px;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.profile .house {
+    width: 100%;
+}
+
+.gallery {
+    background: black;
+    background-size: cover;
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 300px auto 0px;
+    position: absolute;
+    text-align: center;
+    grid-gap: 10px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 150px;
+    font-family: sans-serif; 
+}
+
+.g-nav {
+    margin-bottom: 100%;
+}
+
+.g-content {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.g-gallery {
+    margin-top: 70px;
+    color: white;
+    
+}
+
+.g-content .pics {
+    width: 180px;
+    height: 180px;
+    transition: 1s;
+    filter: grayscale(100%);
+}
+
+.g-content .pics:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(56, 56, 250);
+    color: white;
+}
+
+@media (max-width: 769px){
+    h1 {
+        font-size: 20px;
+    }
+}
